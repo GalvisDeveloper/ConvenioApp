@@ -10,6 +10,13 @@ function App() {
       <Header title="Convenios UFPS" />
       <Presentation msg="Breve Descripción del programa" />
       <Main />
+
+      <br />
+      <br />
+      <hr />
+      <br />
+      <br />
+
       {/* <AgreementTable /> */}
     </div>
   );

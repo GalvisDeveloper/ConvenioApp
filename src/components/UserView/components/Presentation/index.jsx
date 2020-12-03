@@ -1,11 +1,14 @@
 import React from "react";
-import "./styles/index.css";
+import "../../../../index.css";
 
 const Presentation = (props) => {
   return (
     <div className="presentation">
       <div className="presentation__img">
-        <img src="presentacion.jpg" alt="Imagen de presentación" />
+        <img
+          src="https://ww2.ufps.edu.co/public/imagenes/seccion/sistem1.png"
+          alt="Imagen de presentación"
+        />
       </div>
       <div className="presentation__txt">
         <h2>{props.msg}</h2>

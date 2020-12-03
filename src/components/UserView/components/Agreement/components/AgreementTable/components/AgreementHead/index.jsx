@@ -1,22 +1,19 @@
 import React from "react";
+import { TableHead } from "@material-ui/core";
 
 const AgreementHead = () => {
   return (
-    <thead>
-      <tr>
-        {/* icono de busqueda*/}
-        <input type="text" placeholder="Busque un convenio" />
+    <TableHead>
+      <tr className="bg-danger">
+        <th scope="col">Nombre del convenio</th>
+        <th scope="col">Fecha del convenio</th>
+        <th scope="col">Tipo de Convenio</th>
+        <th scope="col">Empresa</th>
+        <th scope="col">Pais</th>
+        <th scope="col">Estado</th>
+        <th scope="col">Descarga</th>
       </tr>
-      <tr>
-        <th>Nombre del convenio</th>
-        <th>Fecha del convenio</th>
-        <th>Tipo de Convenio</th>
-        <th>Empresa</th>
-        <th>Pais</th>
-        <th>Estado</th>
-        <th>Descarga</th>
-      </tr>
-    </thead>
+    </TableHead>
   );
 };
 
