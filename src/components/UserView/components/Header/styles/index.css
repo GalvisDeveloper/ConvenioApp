@@ -4,7 +4,10 @@
 }
 
 .title {
+  width: 100%;
   color: #fafafa;
+  justify-content: center;
+  text-align: center;
 }
 
 .header {

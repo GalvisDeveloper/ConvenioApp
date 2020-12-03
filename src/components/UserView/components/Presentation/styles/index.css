@@ -1,0 +1,19 @@
+.presentation__img {
+  /* width: auto;
+height: auto; */
+}
+
+.presentation__txt {
+  width: 80%;
+  color: black;
+  text-align: center;
+}
+
+.presentation {
+  background-color: #fafafa;
+  display: flex;
+  height: 300px;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
