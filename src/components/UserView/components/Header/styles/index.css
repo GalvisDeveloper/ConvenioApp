@@ -1,0 +1,15 @@
+.logo {
+  width: 400px;
+  height: 99px;
+}
+
+.title {
+  color: #fafafa;
+}
+
+.header {
+  height: 100px;
+  background-color: red;
+  display: flex;
+  flex: 1;
+}
