@@ -6,7 +6,7 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import Nav from './components/OtherView/components/Nav';
 import Layout from './components/OtherView/components/Layout';
-
+import Institution from './components/OtherView/components/Institution/InstitutionTable';
 
 class App extends Component {
 
@@ -30,6 +30,11 @@ class App extends Component {
 
       <Router>
         <div className="App" >
+          <Header
+            nombrePath={this.nombrePath}
+            pathname={this.state.pathname}
+            title="Convenios UFPS"
+          />
 
           <Switch>
             <Route
@@ -37,7 +42,6 @@ class App extends Component {
               exact
               component={() => {
                 <>
-                  <Header title="Convenios UFPS" />
                   <Presentation msg="Breve Descripción del programa" />
                 </>
               }}
@@ -46,7 +50,7 @@ class App extends Component {
 
           <Switch>
             <Route
-              path="/registroConvenios/listadoConvenios"
+              path="/gestionConvenios"
               exact
               component={() => { <Main /> }}
             />
@@ -56,7 +60,7 @@ class App extends Component {
             <Route
               path="/reportes"
               exact
-            // component={() => { }}
+              component={() => { <Layout /> }}
             />
           </Switch>
 
@@ -64,20 +68,19 @@ class App extends Component {
             <Route
               path="/instituciones"
               exact
-            // component={() => { }}
+              component={() => { <Institution /> }}
             />
           </Switch>
 
-          <Switch>
+          {/* <Switch>
             <Route
               path="/historial"
               exact
             // component={() => { }}
             />
-          </Switch>
+          </Switch> */}
 
-          <Header title="Convenios UFPS" />
-          <Presentation msg="Breve Descripción del programa" />
+
           <Main />
           <Nav />
           <Layout />

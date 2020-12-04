@@ -10,7 +10,7 @@ const Nav = () => {
         <h4>Administrador</h4>
       </div>
       <div className="menu__buttons">
-        <AccountBoxIcon id="cuenta"/>
+        <AccountBoxIcon href="" id="cuenta"/>
         <ExitToAppIcon id="salir"/>
       </div>
     </div>
