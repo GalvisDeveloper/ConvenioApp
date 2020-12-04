@@ -4,7 +4,7 @@ import Header from './components/UserView/components/Header';
 import Presentation from './components/UserView/components/Presentation';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
-import Nav from './components/OtherView/components/Nav';
+// import Nav from './components/OtherView/components/Nav';
 import Layout from './components/OtherView/components/Layout';
 import Institution from './components/OtherView/components/Institution/InstitutionTable';
 

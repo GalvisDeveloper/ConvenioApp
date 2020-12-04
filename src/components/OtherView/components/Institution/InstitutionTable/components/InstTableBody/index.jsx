@@ -1,14 +1,14 @@
 import React from "react";
 import { TableBody } from "@material-ui/core";
 
-const InstTableBody = ({mail, direccion, name, tlf}) => {
+const InstTableBody = ({ correo, direccion, nombre, telefono }) => {
   return (
     <TableBody>
       <tr>
-        <td>{mail}Holi</td>
-        <td>{direccion}Holi</td>
-        <td>{name}Holi</td>
-        <td>{tlf}Holi</td>
+        <td>{correo}kapital_corp@gmail.com</td>
+        <td>{direccion}Calle 6 #7-83 Barrio Latino</td>
+        <td>{nombre}Kapital</td>
+        <td>{telefono}3178054213</td>
       </tr>
     </TableBody>
   );

@@ -5,7 +5,7 @@ import InstTableBody from "./components/InstTableBody";
 import { Table } from "@material-ui/core";
 
 const InstitutionTable = () => {
-  const [instituciones, setInstituciones] = useState([]);
+  const [instituciones, setInstituciones] = useState([""]);
 
   return (
     <div className="tabla__institucion">
@@ -15,9 +15,9 @@ const InstitutionTable = () => {
       <h3>Listado de Instituciones registradas</h3>
       <Table className="table">
         <InstTableHead />
-        {instituciones.map((inst) => {
-          <InstTableBody key={inst} instituciones={inst} />;
-        })}
+        {instituciones.map((institucion) => (
+          <InstTableBody key={institucion} institucion={institucion} />
+        ))}
       </Table>
     </div>
   );

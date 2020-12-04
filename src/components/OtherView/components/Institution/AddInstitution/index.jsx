@@ -17,6 +17,10 @@ const AddAgreement = ({ setInstituciones }) => {
     });
   };
 
+  const mensajeExito = () => {
+    alert("Registro Exitoso");
+  };
+
   const handleSubmit = (e) => {
     e.preventDefault();
     setInstituciones((inst) => [datos, ...inst]);
@@ -32,7 +36,7 @@ const AddAgreement = ({ setInstituciones }) => {
             className="form-control"
             value={datos.correo}
             onChange={handleChange}
-            name="mail"
+            name="correo"
             placeholder="Correo de la institucion"
             isrequired="true"
           />
@@ -74,7 +78,7 @@ const AddAgreement = ({ setInstituciones }) => {
         <div>
           <input
             type="submit"
-            onClick={handleSubmit}
+            onClick={mensajeExito}
             value="Registrar"
             id="button"
             className="btn btn-danger"
