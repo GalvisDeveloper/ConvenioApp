@@ -199,3 +199,9 @@ h3 {
   justify-items: center;
   align-items: center;
 }
+
+.tabla__institucion{
+  margin-left: 150px;
+  margin-right: 150px;
+  text-align: center;
+}
