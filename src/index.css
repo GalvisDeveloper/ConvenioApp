@@ -19,6 +19,10 @@ form {
   justify-content: center;
   align-items: center;
   width: -webkit-fill-available;
+  box-shadow: 2px 4px 20px 2px rgba(0, 0, 0, 0.7);
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 5px;
 }
 
 input {
@@ -74,8 +78,9 @@ h3 {
 
 .title {
   width: 100%;
-  color: #cccccc;
+  color: #fafafa;
   justify-content: center;
+  align-items: center;
   text-align: center;
 }
 
@@ -94,10 +99,96 @@ h3 {
 }
 
 .presentation {
-  background-color: #fafafa;
+  background-color: #e8e8e8;
   display: flex;
   height: 300px;
   justify-content: center;
   align-items: center;
   width: 100%;
+}
+
+/* css del nav */
+
+.nav {
+  background-color: red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+}
+
+.current__user {
+  float: left;
+  color: white;
+  margin-right: 700px;
+}
+
+.menu__buttons {
+  float: right;
+  margin-left: 700px;
+}
+
+#cuenta,
+#salir {
+  width: 40px;
+  height: 40px;
+  fill: white;
+}
+
+/* css del layout  */
+
+.layout {
+  display: flex;
+  height: 300px;
+}
+
+/* css del sidebar */
+
+.sidebar {
+  /* width: 20%; */
+  display: flex;
+  flex-direction: column;
+  flex: 0.25;
+}
+
+/* .siderbar button {
+  flex: 0.34;
+} */
+
+/* css de reportes */
+
+.reportes {
+  /* width: 80%; */
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex: 0.75;
+}
+
+.titleReportes {
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+.panels {
+  top: 0%;
+  display: inline-flex;
+  width: 700px;
+}
+
+.panelStart {
+  width: 150px;
+  height: 100px;
+  margin-right: 300px;
+}
+
+.panelEnd {
+  width: 150px;
+  height: 100px;
+}
+
+.btnGenerar {
+  justify-items: center;
+  align-items: center;
 }

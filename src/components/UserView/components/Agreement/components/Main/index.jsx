@@ -6,11 +6,12 @@ import "../../../../../../index.css";
 import { Table } from "@material-ui/core";
 
 const Main = () => {
-  const [convenios, setConvenios] = useState([]);
+  const [convenios, setConvenios] = useState(['']);
 
   return (
     <div className="tabla__convenios">
       <h1>Convenios de Ingenieria de Sistemas</h1>
+      <hr/>
       <AddAgreement setConvenios={setConvenios} />
 
       <hr />

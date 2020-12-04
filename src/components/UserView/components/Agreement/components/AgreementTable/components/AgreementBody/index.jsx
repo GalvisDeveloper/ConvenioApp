@@ -1,30 +1,33 @@
 import React from "react";
-// import PropTypes from "prop-types";
+import PropTypes from "prop-types";
 import { TableBody } from "@material-ui/core";
+import GetAppIcon from "@material-ui/icons/GetApp";
 
-const AgreementBody = ({ props }) => {
+const AgreementBody = ({ convenio, date, type, empresa, country, estado }) => {
   return (
     <TableBody>
       <tr>
-        <td>{props.nameAgreement}</td>
-        <td>{props.date}</td>
-        <td>{props.type}</td>
-        <td>{props.business}</td>
-        <td>{props.country}</td>
-        <td>{props.state}</td>
-        <td>{props.download}</td>
+        <td>{convenio}Holi</td>
+        <td>{date}Holi</td>
+        <td>{type}Holi</td>
+        <td>{empresa}Holi</td>
+        <td>{country}Holi</td>
+        <td>{estado}Holi</td>
+        <td>
+          <GetAppIcon />
+        </td>
       </tr>
     </TableBody>
   );
 };
 
-// AgreementBody.propTypes = {
-//   nameAgreement: PropTypes.string.isRequired,
-//   data: PropTypes.string.isRequired,
-//   type: PropTypes.string.isRequired,
-//   business: PropTypes.string.isRequired,
-//   country: PropTypes.string.isRequired,
-//   state: PropTypes.string.isRequired,
-// };
+AgreementBody.propTypes = {
+  // convenio: PropTypes.string.isRequired,
+  // date: PropTypes.string.isRequired,
+  // type: PropTypes.string.isRequired,
+  // empresa: PropTypes.string.isRequired,
+  // country: PropTypes.string.isRequired,
+  // estado: PropTypes.string.isRequired,
+};
 
 export default AgreementBody;

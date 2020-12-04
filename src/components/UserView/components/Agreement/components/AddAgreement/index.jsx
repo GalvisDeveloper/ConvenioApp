@@ -21,11 +21,12 @@ const AddAgreement = ({ setConvenios }) => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    setDatos((conv) => [datos, ...conv]);
+    setConvenios((conv) => [datos, ...conv]);
   };
 
   return (
     <div className="formulario__registro">
+      <h3>Formulario de Registro de Convenios</h3>
       <form onSubmit={handleSubmit}>
         <div className="form-group">
           <input
