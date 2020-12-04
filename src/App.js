@@ -27,7 +27,6 @@ class App extends Component {
 
   render() {
     return (
-
       <Router>
         <div className="App" >
           <Header
@@ -36,23 +35,13 @@ class App extends Component {
             title="Convenios UFPS"
           />
 
-          <Switch>
-            <Route
-              path="/home"
-              exact
-              component={() => {
-                <>
-                  <Presentation msg="Breve Descripción del programa" />
-                </>
-              }}
-            />
-          </Switch>
+          <Presentation msg="Breve Descripción del programa" />
 
           <Switch>
             <Route
               path="/gestionConvenios"
               exact
-              component={() => { <Main /> }}
+              component={() => <Main />}
             />
           </Switch>
 
@@ -60,7 +49,7 @@ class App extends Component {
             <Route
               path="/reportes"
               exact
-              component={() => { <Layout /> }}
+              component={() => <Layout />}
             />
           </Switch>
 
@@ -68,22 +57,10 @@ class App extends Component {
             <Route
               path="/instituciones"
               exact
-              component={() => { <Institution /> }}
+              component={() => <Institution />}
             />
           </Switch>
 
-          {/* <Switch>
-            <Route
-              path="/historial"
-              exact
-            // component={() => { }}
-            />
-          </Switch> */}
-
-
-          <Main />
-          <Nav />
-          <Layout />
         </div>
       </Router>
     );

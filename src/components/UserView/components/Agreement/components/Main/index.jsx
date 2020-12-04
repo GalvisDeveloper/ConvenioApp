@@ -6,12 +6,12 @@ import "../../../../../../index.css";
 import { Table } from "@material-ui/core";
 
 const Main = () => {
-  const [convenios, setConvenios] = useState(['']);
+  const [convenios, setConvenios] = useState([""]);
 
   return (
     <div className="tabla__convenios">
       <h1>Convenios de Ingenieria de Sistemas</h1>
-      <hr/>
+      <hr />
       <AddAgreement setConvenios={setConvenios} />
 
       <hr />
@@ -23,8 +23,8 @@ const Main = () => {
       </div>
 
       <br />
-
       <div className="tabla">
+        <h3>Listado de Convenios Registrados</h3>
         <Table className="table">
           {/* head de la tabla */}
           <AgreementHead />

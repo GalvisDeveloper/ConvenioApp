@@ -97,6 +97,7 @@ h3 {
   width: 80%;
   color: black;
   text-align: center;
+  padding: 10px;
 }
 
 .presentation {
@@ -106,6 +107,11 @@ h3 {
   justify-content: center;
   align-items: center;
   width: 100%;
+}
+
+#presentation__menu a {
+  width: 120px;
+  margin-right: 10px;
 }
 
 /* css del nav */

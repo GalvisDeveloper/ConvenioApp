@@ -13,7 +13,7 @@ const Presentation = (props) => {
       </div>
       <div className="presentation__txt">
         <h2>{props.msg}</h2>
-        <ul>
+        <ul id="presentation__menu">
           <Link to="/reportes" className="btn btn-danger">
             Generar reportes
           </Link>
